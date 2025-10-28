@@ -1,0 +1,8 @@
+<h1>Filmes</h1>
+<ul>
+  {% for filme in object_list %}
+    <li>{{ filme.nome }} ({{ filme.duracao }}) - {{ filme.lancamento }} - {{ filme.genero }} - {{ filme.diretor }}</li>
+  {% empty %}
+    <li>Nenhum filme encontrado.</li>
+  {% endfor %}
+</ul>
