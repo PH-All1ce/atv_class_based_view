@@ -1,0 +1,10 @@
+<h1>{{ object.nome }}</h1>
+
+<ul>
+  <li>Duração: {{ object.duracao }}</li>
+  <li>Lançamento: {{ object.lancamento }}</li>
+  <li>Gênero: {{ object.genero }}</li>
+  <li>Diretor: {{ object.diretor }}</li>
+</ul>
+
+<a href="{% url 'filmes:list' %}">Voltar para a lista</a>

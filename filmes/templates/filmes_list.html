@@ -1,0 +1,11 @@
+<h1>Lista de Filmes</h1>
+
+<ul>
+  {% for filme in filmes %}
+    <li>
+      <a href="{% url 'filmes:detail' filme.pk %}">{{ filme.nome }}</a>
+    </li>
+  {% empty %}
+    <li>Nenhum filme cadastrado.</li>
+  {% endfor %}
+</ul>
